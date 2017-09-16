@@ -9,6 +9,11 @@ const TodoList = ({ todos }) => {
   </div>)
 }
 
+/**
+ * const connect => (mapStateToProps, mapDispatchToProps) => 
+ * component => <Component {...mapStateToProps()} {...mapDispatchToProps()} />
+ */
+
 export default connect(state => ({
   todos: state.todo,
 }))(TodoList);
